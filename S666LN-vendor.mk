@@ -835,6 +835,8 @@ PRODUCT_PACKAGES += \
     libCamera_pblchi5022qmipiraw_Resolution_zoom \
     libCamera_pblchi5022qmipiraw_ShortVideo \
     libCamera_pblchi5022qmipiraw_SuperNight \
+    libCamera_pblchi5022qmipiraw_TikTok_Lite \
+    libCamera_pblchi5022qmipiraw_TikTok_Lite_zoom \
     libCamera_pblchi5022qmipiraw_Video_1080P \
     libCamera_pblchi5022qmipiraw_Video_120fps \
     libCamera_pblchi5022qmipiraw_Video_2K \
@@ -926,6 +928,7 @@ PRODUCT_PACKAGES += \
     libadpcmdec_mtk \
     libaedv \
     libalsautils \
+    libapmonitor_vendor \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -955,6 +958,8 @@ PRODUCT_PACKAGES += \
     libcam3_transerverengine \
     libcamalgo.utility \
     libcamera2ndk_vendor \
+    libcrypto-md \
+    libcurl-md \
     libcustom_nvram \
     libcvsd_mtk \
     libdecrypt \
@@ -1005,6 +1010,7 @@ PRODUCT_PACKAGES += \
     libpkm \
     libpnpmgr \
     libpower_timer \
+    libpowerhalwrap_vendor \
     libpqframework \
     librgbwlightsensor \
     librt_extamp_intf \
@@ -1012,7 +1018,10 @@ PRODUCT_PACKAGES += \
     libshim_sensors \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libssl-md \
     libstagefright_foundation-v32 \
+    libstrongswan \
+    libthha \
     libtinycompress \
     libudf \
     libutils-v31 \
@@ -1218,6 +1227,7 @@ PRODUCT_PACKAGES += \
     libldnhncr \
     libvisualizer \
     vendor.fpsensor.hardware.fpsensorhidlsvc@2.0 \
+    vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
@@ -1367,6 +1377,7 @@ PRODUCT_PACKAGES += \
     libcomposer_ext \
     libconnfem \
     libfeaturepolicy \
+    libfft_vendor \
     libforkexecwrap \
     libformatter \
     libgf_ca \
@@ -1375,6 +1386,7 @@ PRODUCT_PACKAGES += \
     libgoodixhwfingerprint \
     libheichal \
     libhfmanager \
+    libhfmanagerwrapper \
     libhwm \
     libifcutils_mtk \
     libimagebuffer_wrapper \
@@ -1691,6 +1703,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.engineermode@1.1 \
     vendor.mediatek.hardware.engineermode@1.2 \
     vendor.mediatek.hardware.engineermode@1.3 \
+    vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.netdagent@1.0 \

@@ -1924,6 +1924,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libCamera_pblchi5022qmipiraw_TikTok_Lite",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_pblchi5022qmipiraw_TikTok_Lite.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_pblchi5022qmipiraw_TikTok_Lite.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_pblchi5022qmipiraw_TikTok_Lite_zoom",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_pblchi5022qmipiraw_TikTok_Lite_zoom.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_pblchi5022qmipiraw_TikTok_Lite_zoom.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libCamera_pblchi5022qmipiraw_Video_1080P",
 	owner: "itel",
 	strip: {
@@ -3744,6 +3784,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libapmonitor_vendor",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libapmonitor_vendor.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libapmonitor_vendor.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libaudio_param_parser-vnd",
 	owner: "itel",
 	strip: {
@@ -4315,6 +4375,46 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcamera2ndk_vendor.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcrypto-md",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libcrypto-md.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcrypto-md.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcurl-md",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libcurl-md.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcurl-md.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -5324,6 +5424,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libpowerhalwrap_vendor",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libpowerhalwrap_vendor.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libpowerhalwrap_vendor.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libpqframework",
 	owner: "itel",
 	strip: {
@@ -5464,6 +5584,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libssl-md",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libssl-md.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libssl-md.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libstagefright_foundation-v32",
 	owner: "itel",
 	strip: {
@@ -5475,6 +5615,46 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libstagefright_foundation-v32.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libstrongswan",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libstrongswan.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libstrongswan.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libthha",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libthha.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libthha.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -9777,6 +9957,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.apmonitor@2.0",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.audio@6.1",
 	owner: "itel",
 	strip: {
@@ -12454,6 +12654,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libfft_vendor",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libfft_vendor.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libforkexecwrap",
 	owner: "itel",
 	strip: {
@@ -12581,6 +12798,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libhfmanager.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libhfmanagerwrapper",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libhfmanagerwrapper.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -18176,6 +18410,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.lbs@1.0",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
