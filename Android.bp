@@ -66,26 +66,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.bluetooth.audio-impl",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.bluetooth.audio-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libGLES_meow",
 	owner: "itel",
 	strip: {
@@ -233,17 +213,80 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.audio@7.0-impl",
+	name: "android.hardware.audio@6.0-impl-mediatek",
 	owner: "itel",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl.so"],
+			srcs: ["proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl.so"],
+			srcs: ["proprietary/vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.audio@7.0-impl-mediatek",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.bluetooth.audio@2.0-impl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.bluetooth.audio@2.1-impl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -800,6 +843,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.bluetooth.audio@2.1-impl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.bluetooth.audio@2.2-impl",
 	owner: "itel",
 	strip: {
@@ -832,6 +896,69 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.mms@1.6-impl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.mtkpower@1.2-impl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.nvram@1.1-impl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -4104,26 +4231,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libbinder-v31",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libbinder-v31.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbinder-v31.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libblisrc32_vendor",
 	owner: "itel",
 	strip: {
@@ -4155,26 +4262,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbluetooth_audio_session_aidl",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libbluetooth_audio_session_aidl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -4795,26 +4882,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libhevce_sb.ca7.android.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libhidlbase-v31",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libhidlbase-v31.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libhidlbase-v31.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -5524,26 +5591,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libshim_sensors",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libshim_sensors.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libshim_sensors.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libspeech_enh_lib",
 	owner: "itel",
 	strip: {
@@ -5595,26 +5642,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libssl-md.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libstagefright_foundation-v32",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libstagefright_foundation-v32.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libstagefright_foundation-v32.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -5695,46 +5722,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libudf.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libutils-v31",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libutils-v31.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libutils-v31.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libutils-v32",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libutils-v32.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libutils-v32.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -11363,6 +11350,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "android.hardware.power-service-mediatek",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/android.hardware.power-service-mediatek.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "hal_libnfc",
 	owner: "itel",
 	strip: {
@@ -11622,42 +11626,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.mms@1.6-impl",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.nvram@1.1-impl",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -13589,23 +13557,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libperfmgr",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libperfmgr.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libpn557_fw",
 	owner: "itel",
 	strip: {
@@ -13988,23 +13939,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvpu.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libwifi-hal-mtk",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libwifi-hal-mtk.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -18062,23 +17996,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "pixel-power-ext-V1-ndk",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/pixel-power-ext-V1-ndk.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.apuware.apusys@2.0",
 	owner: "itel",
 	strip: {
@@ -18859,6 +18776,19 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "android.hardware.audio.service.mediatek",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "android.hardware.biometrics.fingerprint@2.1-service",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service"],
@@ -18898,9 +18828,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.drm-service.clearkey",
+	name: "android.hardware.drm@1.4-service.clearkey",
 	owner: "itel",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey"],
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.clearkey"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -18963,9 +18893,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.lights-service.transsion",
+	name: "android.hardware.lights-service.mediatek",
 	owner: "itel",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.lights-service.transsion"],
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.lights-service.mediatek"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -19041,9 +18971,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.sensors@2.1-service.multihal",
+	name: "android.hardware.sensors@2.0-service.multihal-mediatek",
 	owner: "itel",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.sensors@2.1-service.multihal"],
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -19080,9 +19010,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.vibrator-service.transsion",
+	name: "android.hardware.vibrator-service.mediatek",
 	owner: "itel",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.vibrator-service.transsion"],
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -19145,19 +19075,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "vendor.lineage.touch@1.0-service.transsion",
-	owner: "itel",
-	srcs: ["proprietary/vendor/bin/hw/vendor.lineage.touch@1.0-service.transsion"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.mediatek.hardware.keymaster_attestation@1.1-service",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service"],
@@ -19174,6 +19091,19 @@ cc_prebuilt_binary {
 	name: "vendor.mediatek.hardware.mms@1.6-service",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor.mediatek.hardware.mtkpower@1.0-service",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -19388,6 +19318,18 @@ cc_prebuilt_binary {
 	name: "mtk_pkm_service",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/mtk_pkm_service"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "muxreport",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/muxreport"],
 	check_elf_files: false,
 	strip: {
 		none: true,
