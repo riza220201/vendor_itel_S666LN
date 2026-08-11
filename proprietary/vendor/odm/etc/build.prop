@@ -7,24 +7,26 @@ ro.product.odm.device=itel-S666LN
 ro.product.odm.manufacturer=ITEL
 ro.product.odm.model=itel S666LN
 ro.product.odm.name=S666LN-OP
+ro.product.odm.tran.device.name.default=
 ro.odm.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
 ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.odm.product.cpu.abilist64=arm64-v8a
-ro.odm.build.date=Thu Jul 30 16:06:33 UTC 2026
-ro.odm.build.date.utc=1785427593
-ro.odm.build.fingerprint=Itel/S666LN-OP/itel-S666LN:13/TP1A.220624.014/251212V1661:user/release-keys
-ro.odm.build.id=TP1A.220624.014
+ro.odm.build.date=Fri Dec 12 16:39:13 CST 2025
+ro.odm.build.date.utc=1765528753
+ro.odm.build.fingerprint=Itel/S666LN-OP/itel-S666LN:12/SP1A.210812.016/251212V1309:user/release-keys
+ro.odm.build.id=SP1A.210812.016
 ro.odm.build.tags=release-keys
 ro.odm.build.type=user
-ro.odm.build.version.incremental=251212V1661
-ro.odm.build.version.release=13
-ro.odm.build.version.release_or_codename=13
-ro.odm.build.version.sdk=33
+ro.odm.build.version.incremental=251212V1309
+ro.odm.build.version.release=12
+ro.odm.build.version.release_or_codename=12
+ro.odm.build.version.sdk=31
 ####################################
 # from variable ADDITIONAL_ODM_PROPERTIES
 ####################################
 ####################################
 # from variable PRODUCT_ODM_PROPERTIES
 ####################################
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
 # end of file
-

@@ -19010,19 +19010,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.vibrator-service.mediatek",
-	owner: "itel",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.graphics.allocator@4.0-service-mediatek.mt6789",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789"],
