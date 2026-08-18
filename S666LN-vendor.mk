@@ -341,6 +341,7 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
+    vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-stock.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
@@ -404,6 +405,7 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
+    vendor/itel/S666LN/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -737,6 +739,7 @@ PRODUCT_PACKAGES += \
     libMEOW_qt \
     libMEOW_trace \
     libGLES_mali \
+    android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio@7.0-impl-mediatek \
@@ -906,6 +909,7 @@ PRODUCT_PACKAGES += \
     libCamera_s5kjn1mipiraw_Video_Zoom2 \
     libDefaultFpsActor \
     libFrameRecord \
+    libJpgEncPipe \
     libMcClient \
     libMtkOmxCore \
     libMtkSpeechEnh \
@@ -922,6 +926,7 @@ PRODUCT_PACKAGES += \
     libaedv \
     libalsautils \
     libapmonitor_vendor \
+    libapu_mdw \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -945,6 +950,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk_pure \
     libbluetooth_relayer \
     libbluetoothem_mtk \
+    libbt-vendor \
     libbwc \
     libcam3_transerverengine \
     libcamalgo.utility \
@@ -955,8 +961,10 @@ PRODUCT_PACKAGES += \
     libcvsd_mtk \
     libdecrypt \
     libdre \
+    libdts-eagle-shared \
     libdynamiclog \
     libeffects \
+    libeffectsconfig-stock \
     libfgauge_gm30 \
     libfile_op \
     libfp_ext_svc2 \
@@ -1207,9 +1215,10 @@ PRODUCT_PACKAGES += \
     s5kjn1_mipi_raw_tuning \
     s5k2lqsx_mipi_raw_IdxMgr \
     s5k4h7_mipi_raw_IdxMgr \
+    libaudiopreprocessing_mtk \
+    libdtsaudio \
     libdynproc \
     libeffectproxy \
-    libhapticgenerator \
     libldnhncr \
     libvisualizer \
     vendor.fpsensor.hardware.fpsensorhidlsvc@2.0 \
@@ -1288,8 +1297,13 @@ PRODUCT_PACKAGES += \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
+    android.hardware.media.c2@1.0-stock \
+    android.hardware.media.c2@1.1-stock \
+    android.hardware.media.c2@1.2-stock \
     android.hardware.power-service-mediatek \
+    ese_spi_nxp-stock \
     hal_libnfc \
+    android.hardware.boot@1.0-impl-1.2-mtkimpl-stock \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
@@ -1307,7 +1321,6 @@ PRODUCT_PACKAGES += \
     lib3a.ae.pipe \
     libFy-3A-Core \
     libFy-3A-Param \
-    libJpgEncPipe \
     libTranExtImgThread \
     libTranVideoFilter \
     libaibld \
@@ -1317,7 +1330,6 @@ PRODUCT_PACKAGES += \
     libanc_hdr_adapter_s5kjn1_17201858_back_g97 \
     libancbase \
     libancbase_848 \
-    libapu_mdw \
     libapu_mdw_batch \
     libapusys \
     libapusys_edma \
@@ -1349,14 +1361,20 @@ PRODUCT_PACKAGES += \
     libccci_util \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
+    libcodec2_hidl@1.0-stock \
+    libcodec2_hidl@1.1-stock \
+    libcodec2_hidl@1.2-stock \
+    libcodec2_hidl_plugin-stock \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
+    libcodec2_soft_common-stock \
     libcodec2_soft_mtk_alacdec \
     libcodec2_soft_mtk_apedec \
     libcodec2_soft_mtk_imaadpcmdec \
     libcodec2_soft_mtk_mp3dec \
     libcodec2_soft_mtk_msadpcmdec \
+    libcodec2_vndk-stock \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libcomposer_ext \
@@ -1421,6 +1439,8 @@ PRODUCT_PACKAGES += \
     libratconfig \
     librilfusion \
     librpc \
+    libsfplugin_ccodec_utils-stock \
+    libstagefright_bufferpool@2.0.1-stock \
     libstorage_otp \
     libsysenv \
     libtflite_mtk \
@@ -1440,6 +1460,7 @@ PRODUCT_PACKAGES += \
     libviagpsrpc \
     libvideofilter_cl_64 \
     libvpu \
+    libwifi-hal-stock \
     libwpfa \
     libwvhidl \
     libwvdrmengine \
@@ -1665,6 +1686,7 @@ PRODUCT_PACKAGES += \
     libvainr_model \
     libyuvenhance \
     libmtkcam_streaminfo_plugin-p1stt \
+    nfc_nci_nxp \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
     vendor.mediatek.hardware.apuware.hmp@1.0 \
@@ -1733,6 +1755,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
+    android.hardware.wifi@1.0-service-stock \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     camerahalserver \
     mtkfusionrild \
@@ -1769,6 +1792,7 @@ PRODUCT_PACKAGES += \
     tran_tinymix \
     tranlog \
     tranlogconfig \
+    vndservicemanager \
     volte_clientapi_ua \
     volte_imcb \
     volte_imsm_93 \

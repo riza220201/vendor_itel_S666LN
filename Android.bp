@@ -192,6 +192,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "android.hardware.audio.effect@6.0-impl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "android.hardware.audio.effect@7.0-impl",
 	owner: "itel",
 	strip: {
@@ -3611,6 +3632,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libJpgEncPipe",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libJpgEncPipe.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libJpgEncPipe.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libMcClient",
 	owner: "itel",
 	strip: {
@@ -3922,6 +3963,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libapmonitor_vendor.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libapu_mdw",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libapu_mdw.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libapu_mdw.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -4391,6 +4452,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libbt-vendor",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libbt-vendor.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libbt-vendor.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libbwc",
 	owner: "itel",
 	strip: {
@@ -4591,6 +4672,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libdts-eagle-shared",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libdts-eagle-shared.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libdts-eagle-shared.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libdynamiclog",
 	owner: "itel",
 	strip: {
@@ -4622,6 +4723,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libeffects.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libeffectsconfig-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libeffectsconfig-stock.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libeffectsconfig-stock.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -9819,6 +9940,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libaudiopreprocessing_mtk",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "soundfx",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdtsaudio",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/soundfx/libdtsaudio.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/soundfx/libdtsaudio.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "soundfx",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libdynproc",
 	owner: "itel",
 	strip: {
@@ -9851,27 +10014,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/soundfx/libeffectproxy.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "soundfx",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libhapticgenerator",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/soundfx/libhapticgenerator.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/soundfx/libhapticgenerator.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -11350,6 +11492,57 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "android.hardware.media.c2@1.0-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/android.hardware.media.c2@1.0-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.media.c2@1.1-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/android.hardware.media.c2@1.1-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.media.c2@1.2-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/android.hardware.media.c2@1.2-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "android.hardware.power-service-mediatek",
 	owner: "itel",
 	strip: {
@@ -11358,6 +11551,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/android.hardware.power-service-mediatek.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "ese_spi_nxp-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/ese_spi_nxp-stock.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -11379,6 +11589,24 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.boot@1.0-impl-1.2-mtkimpl-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	relative_install_path: "hw",
 	prefer: true,
 	soc_specific: true,
 }
@@ -11687,23 +11915,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libJpgEncPipe",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libJpgEncPipe.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libTranExtImgThread",
 	owner: "itel",
 	strip: {
@@ -11848,23 +12059,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libancbase_848.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libapu_mdw",
-	owner: "itel",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libapu_mdw.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -12401,6 +12595,74 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libcodec2_hidl@1.0-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_hidl@1.0-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcodec2_hidl@1.1-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_hidl@1.1-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcodec2_hidl@1.2-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_hidl@1.2-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcodec2_hidl_plugin-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_hidl_plugin-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libcodec2_mtk_c2store",
 	owner: "itel",
 	strip: {
@@ -12443,6 +12705,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcodec2_mtk_venc.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcodec2_soft_common-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_soft_common-stock.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -12528,6 +12807,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcodec2_vndk-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_vndk-stock.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -13625,6 +13921,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libsfplugin_ccodec_utils-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsfplugin_ccodec_utils-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libstagefright_bufferpool@2.0.1-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1-stock.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libstorage_otp",
 	owner: "itel",
 	strip: {
@@ -13939,6 +14269,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvpu.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libwifi-hal-stock",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libwifi-hal-stock.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -17996,6 +18343,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "nfc_nci_nxp",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/nfc_nci_nxp.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.apuware.apusys@2.0",
 	owner: "itel",
 	strip: {
@@ -19010,6 +19374,19 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "android.hardware.wifi@1.0-service-stock",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-stock"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "android.hardware.graphics.allocator@4.0-service-mediatek.mt6789",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789"],
@@ -19449,6 +19826,18 @@ cc_prebuilt_binary {
 	name: "tranlogconfig",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/tranlogconfig"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vndservicemanager",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/vndservicemanager"],
 	check_elf_files: false,
 	strip: {
 		none: true,
