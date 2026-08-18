@@ -341,6 +341,7 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
+    vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-stock.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
@@ -352,6 +353,7 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
+    vendor/itel/S666LN/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
@@ -382,6 +384,7 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
+    vendor/itel/S666LN/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/mtk_pkm_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_pkm_service.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -405,6 +408,7 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
+    vendor/itel/S666LN/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
@@ -1393,6 +1397,8 @@ PRODUCT_PACKAGES += \
     libhwm \
     libifcutils_mtk \
     libimagebuffer_wrapper \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl \
     libkmsetkey \
     libksensor \
     libminiui \
@@ -1720,6 +1726,7 @@ PRODUCT_PACKAGES += \
     vendor.transsion.hardware.tne.tneengine@1.0 \
     vendor.transsion.hardware.tranlog@1.0 \
     vendor.transsion.hardware.tranlogconfig@1.0 \
+    vendor.transsion.hardware.wifi.hostapd@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -1748,6 +1755,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.lights-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
+    android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.nfc@1.2-service \
     android.hardware.secure_element@1.2-service-mediatek \
@@ -1755,7 +1763,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
+    android.hardware.vibrator-service.mediatek-stock \
     android.hardware.wifi@1.0-service-stock \
+    hostapd \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     camerahalserver \
     mtkfusionrild \
@@ -1770,6 +1780,7 @@ PRODUCT_PACKAGES += \
     vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
+    wpa_supplicant \
     kmsetkey_ca.trustonic \
     mcDriverDaemon \
     md_monitor \

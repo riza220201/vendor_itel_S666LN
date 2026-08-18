@@ -13139,6 +13139,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libkeystore-engine-wifi-hidl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libkeystore-wifi-hidl",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libkeystore-wifi-hidl.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libkmsetkey",
 	owner: "itel",
 	strip: {
@@ -18921,6 +18955,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.transsion.hardware.wifi.hostapd@1.0",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.transsion.hardware.wifi.hostapd@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.trustonic.tee.tui@1.0",
 	owner: "itel",
 	strip: {
@@ -19283,6 +19334,19 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "android.hardware.memtrack-service.mediatek",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "android.hardware.neuralnetworks-shim-service-mtk",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk"],
@@ -19374,9 +19438,35 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "android.hardware.vibrator-service.mediatek-stock",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek-stock"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "android.hardware.wifi@1.0-service-stock",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-stock"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "hostapd",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/hw/hostapd"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -19559,6 +19649,19 @@ cc_prebuilt_binary {
 	name: "vtservice_hidl",
 	owner: "itel",
 	srcs: ["proprietary/vendor/bin/hw/vtservice_hidl"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "wpa_supplicant",
+	owner: "itel",
+	srcs: ["proprietary/vendor/bin/hw/wpa_supplicant"],
 	check_elf_files: false,
 	strip: {
 		none: true,
