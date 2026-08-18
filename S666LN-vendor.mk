@@ -1406,6 +1406,7 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmnetlink_v104 \
     libmtk-ril \
+    libmtk_bsg-stock \
     libmtkares \
     libmtkcam_3rdparty.thread \
     libmtkcam_fdWarpConvert \
