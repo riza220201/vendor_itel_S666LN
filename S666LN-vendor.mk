@@ -930,7 +930,9 @@ PRODUCT_PACKAGES += \
     libaedv \
     libalsautils \
     libapmonitor_vendor \
+    libappgamepq \
     libapu_mdw \
+    libarmnn \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -959,6 +961,7 @@ PRODUCT_PACKAGES += \
     libcam3_transerverengine \
     libcamalgo.utility \
     libcamera2ndk_vendor \
+    libcapctrl \
     libcrypto-md \
     libcurl-md \
     libcustom_nvram \
@@ -966,6 +969,7 @@ PRODUCT_PACKAGES += \
     libdecrypt \
     libdre \
     libdts-eagle-shared \
+    libdtsdsec \
     libdynamiclog \
     libeffects \
     libeffectsconfig-stock \
@@ -1006,16 +1010,19 @@ PRODUCT_PACKAGES += \
     libnbaio_mono \
     libnvram \
     libnvram_sec \
+    libnwk_opt_halwrap_vendor \
     libnxp_extamp_intf \
     libperfctl_vendor \
     libpixelflinger \
     libpkm \
     libpnpmgr \
     libpower_timer \
+    libpowerhal \
     libpowerhalwrap_vendor \
     libpqframework \
     librgbwlightsensor \
     librt_extamp_intf \
+    libscltm \
     libsensorndkbridge \
     libspeech_enh_lib \
     libspeechparser_vendor \
@@ -1031,6 +1038,7 @@ PRODUCT_PACKAGES += \
     libwo \
     libclearkeycasplugin \
     libdrmclearkeyplugin \
+    meta_wifi_data \
     arm.graphics-V1-ndk_platform \
     fake_serial_yuv_IdxMgr \
     fake_serial_yuv_tuning \
@@ -1248,6 +1256,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
+    vendor.mediatek.hardware.nwk_opt@1.0 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pq@2.0 \
@@ -1281,6 +1290,7 @@ PRODUCT_PACKAGES += \
     libh264enc_sa.ca7 \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
+    librcs_interface \
     librcs_volte_core \
     libvcodec_utility_plat.mt6789 \
     libvcodec_utility_plat.mt6855 \
@@ -1391,6 +1401,9 @@ PRODUCT_PACKAGES += \
     libgf_factory_test \
     libgf_hal \
     libgoodixhwfingerprint \
+    libgwsd-ril \
+    libgwsdv2-ril \
+    libgwsdv3-ril \
     libheichal \
     libhfmanager \
     libhfmanagerwrapper \
@@ -1405,6 +1418,7 @@ PRODUCT_PACKAGES += \
     libminizip \
     libmipc \
     libmnetlink_v104 \
+    libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtk_bsg-stock \
     libmtkares \
@@ -1415,6 +1429,7 @@ PRODUCT_PACKAGES += \
     libmtkconfigutils \
     libmtkisp_metadata \
     libmtkisp_metadata_v2 \
+    libmtkmipc-ril \
     libmtknetcap \
     libmtknetutils \
     libmtkrilutils \
@@ -1464,7 +1479,9 @@ PRODUCT_PACKAGES += \
     libtrm \
     liburee_meta_drmkeyinstall \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    libvia-ril \
     libviagpsrpc \
+    libviamipc-ril \
     libvideofilter_cl_64 \
     libvpu \
     libwifi-hal-stock \
