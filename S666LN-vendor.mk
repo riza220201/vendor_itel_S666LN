@@ -962,6 +962,7 @@ PRODUCT_PACKAGES += \
     libcamalgo.utility \
     libcamera2ndk_vendor \
     libcapctrl \
+    libcmdl \
     libcrypto-md \
     libcurl-md \
     libcustom_nvram \
@@ -1254,6 +1255,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mms@1.6 \
+    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.nwk_opt@1.0 \
@@ -1373,7 +1375,6 @@ PRODUCT_PACKAGES += \
     libcares_naptr \
     libcarrierconfig \
     libccci_util \
-    libcmdl \
     libcmdl_ndk.mtk.vndk \
     libcodec2_hidl@1.0-stock \
     libcodec2_hidl@1.1-stock \
@@ -1734,7 +1735,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.1 \
     vendor.mediatek.hardware.neuropilot.agent@1.2 \
