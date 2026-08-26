@@ -755,7 +755,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@2.0-impl \
-    audio.bluetooth.default \
     audio.primary.default \
     audio.primary.mediatek \
     audio.r_submix.default \
@@ -949,7 +948,6 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
     libbluetooth_mtk \
