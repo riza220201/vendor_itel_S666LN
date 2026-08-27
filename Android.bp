@@ -66,6 +66,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "android.hardware.graphics.common-V6-ndk",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/android.hardware.graphics.common-V6-ndk.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/android.hardware.graphics.common-V6-ndk.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libGLES_meow",
 	owner: "itel",
 	strip: {
@@ -4491,6 +4511,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libc++_r54",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libc++_r54.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libc++_r54.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libcam3_transerverengine",
 	owner: "itel",
 	strip: {
@@ -5362,6 +5402,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmsbc_mtk.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmtk_mali_user",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmtk_mali_user.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmtk_mali_user.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -10376,6 +10436,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.graphics-V1-ndk",
+	owner: "itel",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.graphics-V1-ndk.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.graphics-V1-ndk.so"],
 		},
 	},
 	compile_multilib: "both",
