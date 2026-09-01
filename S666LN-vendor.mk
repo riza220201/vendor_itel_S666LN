@@ -737,6 +737,7 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA_510 \
     HEVCSecureVdecCA_510 \
     VP9SecureVdecCA_510 \
+    android.hardware.graphics.common-V6-ndk \
     libGLES_meow \
     libMEOW_data \
     libMEOW_gift \
@@ -956,6 +957,7 @@ PRODUCT_PACKAGES += \
     libbluetoothem_mtk \
     libbt-vendor \
     libbwc \
+    libc++_r54 \
     libcam3_transerverengine \
     libcamalgo.utility \
     libcamera2ndk_vendor \
@@ -1000,6 +1002,7 @@ PRODUCT_PACKAGES += \
     libmml \
     libmp3dec_mtk \
     libmsbc_mtk \
+    libmtk_mali_user \
     libmtkcutils \
     libmtkhardware_legacy \
     libmtklimiter_vendor \
@@ -1241,6 +1244,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
+    vendor.mediatek.hardware.graphics-V1-ndk \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
