@@ -927,7 +927,7 @@ PRODUCT_PACKAGES += \
     libaal_mtk \
     libadpcmdec_mtk \
     libaedv \
-    libalsautils \
+    libalsautils_vendor \
     libapmonitor_vendor \
     libappgamepq \
     libapu_mdw \
