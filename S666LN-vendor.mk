@@ -1315,6 +1315,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.1-stock \
     android.hardware.media.c2@1.2-stock \
     android.hardware.power-service-mediatek \
+    ese_client \
     ese_spi_nxp-stock \
     hal_libnfc \
     android.hardware.boot@1.0-impl-1.2-mtkimpl-stock \
