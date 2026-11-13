@@ -1007,6 +1007,7 @@ PRODUCT_PACKAGES += \
     libnvram_sec \
     libnwk_opt_halwrap_vendor \
     libnxp_extamp_intf \
+    libpcap-stock \
     libperfctl_vendor \
     libpixelflinger \
     libpkm \

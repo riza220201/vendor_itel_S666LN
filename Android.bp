@@ -8549,6 +8549,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libavservices_minijail_vendor.so",
             ],
             shared_libs: [
+                "libshim_base",
                 "libbase",
                 "libminijail",
                 "libc++",
@@ -8562,6 +8563,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libavservices_minijail_vendor.so",
             ],
             shared_libs: [
+                "libshim_base",
                 "libbase",
                 "libminijail",
                 "libc++",
@@ -10211,6 +10213,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -11166,6 +11169,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libnvram.so",
             ],
             shared_libs: [
+                "libshim_base",
                 "libcutils",
                 "libbase",
                 "liblog",
@@ -11181,6 +11185,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libnvram.so",
             ],
             shared_libs: [
+                "libshim_base",
                 "libcutils",
                 "libbase",
                 "liblog",
@@ -11339,6 +11344,41 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpcap-stock",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libpcap-stock.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpcap-stock.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libperfctl_vendor",
     owner: "itel",
     strip: {
@@ -11440,7 +11480,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "libdecrypt",
-                "libpcap",
+                "libpcap-stock",
                 "liblog",
                 "libhidlbase",
                 "libhidltransport",
@@ -11463,7 +11503,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "libdecrypt",
-                "libpcap",
+                "libpcap-stock",
                 "liblog",
                 "libhidlbase",
                 "libhidltransport",
@@ -12119,6 +12159,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -12238,6 +12279,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -22720,6 +22762,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -22909,6 +22952,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -22938,6 +22982,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -22967,6 +23012,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -22995,6 +23041,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -23022,6 +23069,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -23050,6 +23098,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -23297,6 +23346,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -23321,6 +23371,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -23350,6 +23401,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -23856,6 +23908,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/ese_spi_nxp-stock.so",
             ],
             shared_libs: [
+                "libshim_base",
                 "android.hardware.nfc@1.0",
                 "android.hardware.nfc@1.1",
                 "android.hardware.secure_element@1.0",
@@ -23929,6 +23982,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl-stock.so",
             ],
             shared_libs: [
+                "libshim_base",
                 "libbase",
                 "liblog",
                 "libhidlbase",
@@ -24178,6 +24232,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so",
             ],
             shared_libs: [
+                "libshim_processgroup",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -24504,6 +24559,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib3a.ae.pipe.so",
             ],
             shared_libs: [
+                "liblog",
                 "libdl",
                 "libSQLiteModule_VER_ALL",
                 "libm",
@@ -25598,6 +25654,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_hidl@1.0-stock.so",
             ],
             shared_libs: [
+                "libshim_bqhelper",
+                "libshim_base",
                 "android.hardware.graphics.bufferqueue@1.0",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.graphics.common@1.0",
@@ -25640,6 +25698,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_hidl@1.1-stock.so",
             ],
             shared_libs: [
+                "libshim_bqhelper",
+                "libshim_base",
                 "android.hardware.graphics.bufferqueue@1.0",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.graphics.common@1.0",
@@ -25684,6 +25744,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_hidl@1.2-stock.so",
             ],
             shared_libs: [
+                "libshim_bqhelper",
+                "libshim_base",
                 "android.hardware.graphics.bufferqueue@1.0",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.graphics.common@1.0",
@@ -26094,6 +26156,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_vndk-stock.so",
             ],
             shared_libs: [
+                "libshim_ui",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.media.bufferpool@2.0",
@@ -28292,6 +28355,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsysenv.so",
             ],
             shared_libs: [
+                "libshim_base",
                 "liblog",
                 "libbase",
                 "libc++",
@@ -28686,6 +28750,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so",
             ],
             shared_libs: [
+                "libshim_hidlbase",
                 "liblog",
                 "libc++",
                 "libcutils",
@@ -28988,6 +29053,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/lib3a.ae.stat.so",
             ],
             shared_libs: [
+                "liblog",
                 "libm",
                 "libdl",
                 "libc",
@@ -29278,6 +29344,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/lib3a.flash.so",
             ],
             shared_libs: [
+                "liblog",
                 "libdl",
                 "libSQLiteModule_VER_ALL",
                 "libm",
@@ -29417,6 +29484,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/lib3a.sensors.color.so",
             ],
             shared_libs: [
+                "liblog",
                 "libm",
                 "libdl",
                 "libc",
@@ -29441,6 +29509,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/lib3a.sensors.flicker.so",
             ],
             shared_libs: [
+                "liblog",
                 "libm",
                 "libdl",
                 "libc",
@@ -33073,6 +33142,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "mt6789",
     prefer: true,
     soc_specific: true,
@@ -33657,6 +33727,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmnl.so",
             ],
             shared_libs: [
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -33709,6 +33780,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmorpho_video_stabilizer.so",
             ],
             shared_libs: [
+                "libutils",
                 "libui",
                 "libc",
                 "libm",
@@ -35959,6 +36031,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "mt6789",
     prefer: true,
     soc_specific: true,
@@ -36130,6 +36203,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libsegmention.so",
             ],
             shared_libs: [
+                "libtflite_native_gainference",
                 "libtflite_native_seginference",
                 "libc",
                 "libm",
@@ -36437,6 +36511,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "mt6789",
     prefer: true,
     soc_specific: true,
@@ -38117,6 +38192,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service",
             ],
             shared_libs: [
+                "libshim_hidlbase",
                 "libcutils",
                 "liblog",
                 "libhidlbase",
@@ -38624,9 +38700,9 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libhidlbase",
-                "android.hardware.security.keymint-V1-ndk",
-                "android.hardware.security.sharedsecret-V1-ndk",
-                "android.hardware.security.secureclock-V1-ndk",
+                "android.hardware.security.keymint-V1-ndk_platform",
+                "android.hardware.security.sharedsecret-V1-ndk_platform",
+                "android.hardware.security.secureclock-V1-ndk_platform",
                 "libbase",
                 "libbinder_ndk",
                 "libcppbor_external",
@@ -38660,6 +38736,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek",
             ],
             shared_libs: [
+                "libshim_base",
                 "android.hardware.sensors@2.0",
                 "android.hardware.sensors@2.0-ScopedWakelock",
                 "android.hardware.sensors@2.1",
@@ -38728,6 +38805,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2",
             ],
             shared_libs: [
+                "libshim_base",
                 "android.hardware.usb@1.0",
                 "android.hardware.usb@1.1",
                 "android.hardware.usb@1.2",
@@ -38837,6 +38915,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/hostapd",
             ],
             shared_libs: [
+                "libshim_crypto",
                 "libcutils",
                 "liblog",
                 "libcrypto",
@@ -39193,6 +39272,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.mediatek.hardware.tranHwInfo@1.0-service",
             ],
             shared_libs: [
+                "libshim_base",
                 "libhidlbase",
                 "libutils",
                 "libcutils",
@@ -39360,6 +39440,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/wpa_supplicant",
             ],
             shared_libs: [
+                "libshim_crypto",
                 "libcutils",
                 "liblog",
                 "libcrypto",
@@ -39484,6 +39565,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/meta_tst",
             ],
             shared_libs: [
+                "libshim_base",
                 "libhardware",
                 "libhardware_legacy",
                 "libcutils",
