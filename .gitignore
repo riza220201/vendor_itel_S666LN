@@ -1,0 +1,3 @@
+# Markdown: only a root README would be published; every other .md stays local.
+*.md
+!/README.md
