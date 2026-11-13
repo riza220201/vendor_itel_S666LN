@@ -23720,6 +23720,65 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.graphics.composer@2.1-resources-stock",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.graphics.composer@2.1-resources-stock.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.composer@2.1",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.graphics.composer@2.2-resources-stock",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.graphics.composer@2.2-resources-stock.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.composer@2.1-resources-stock",
+                "android.hardware.graphics.composer@2.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "android.hardware.media.c2@1.0-stock",
     owner: "itel",
     strip: {
@@ -38440,8 +38499,8 @@ cc_prebuilt_binary {
                 "android.hardware.graphics.composer@2.1",
                 "android.hardware.graphics.composer@2.2",
                 "android.hardware.graphics.composer@2.3",
-                "android.hardware.graphics.composer@2.1-resources",
-                "android.hardware.graphics.composer@2.2-resources",
+                "android.hardware.graphics.composer@2.1-resources-stock",
+                "android.hardware.graphics.composer@2.2-resources-stock",
                 "libbase",
                 "libbinder",
                 "libcutils",

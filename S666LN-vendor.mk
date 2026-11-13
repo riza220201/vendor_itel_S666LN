@@ -309,6 +309,8 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/ecc_list_tran2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_tran2.xml \
+    vendor/itel/S666LN/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
+    vendor/itel/S666LN/proprietary/vendor/etc/gbe.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gbe.cfg \
     vendor/itel/S666LN/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -456,6 +458,9 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/pnpmgr.db:$(TARGET_COPY_OUT_VENDOR)/etc/pnpmgr.db \
+    vendor/itel/S666LN/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
+    vendor/itel/S666LN/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
+    vendor/itel/S666LN/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/predthermallevel_rf.json:$(TARGET_COPY_OUT_VENDOR)/etc/predthermallevel_rf.json \
     vendor/itel/S666LN/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/security/cacerts/01419da9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/01419da9.0 \
@@ -621,6 +626,7 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/itel/S666LN/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
+    vendor/itel/S666LN/proprietary/vendor/etc/xgf.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/xgf.cfg \
     vendor/itel/S666LN/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/itel/S666LN/proprietary/vendor/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest.ini \
     vendor/itel/S666LN/proprietary/vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin \
@@ -1308,6 +1314,8 @@ PRODUCT_PACKAGES += \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
+    android.hardware.graphics.composer@2.1-resources-stock \
+    android.hardware.graphics.composer@2.2-resources-stock \
     android.hardware.media.c2@1.0-stock \
     android.hardware.media.c2@1.1-stock \
     android.hardware.media.c2@1.2-stock \
