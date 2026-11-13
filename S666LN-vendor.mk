@@ -742,7 +742,6 @@ PRODUCT_PACKAGES += \
     libMEOW_gift \
     libMEOW_qt \
     libMEOW_trace \
-    libGLES_mali \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@6.0-impl-mediatek \
@@ -977,7 +976,6 @@ PRODUCT_PACKAGES += \
     libfp_ext_svc2 \
     libged \
     libgpu_aux \
-    libgpud \
     libgralloc_extra \
     libgralloc_metadata \
     libgralloctypes_mtk \
@@ -1834,3 +1832,9 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     wmt_launcher \
     wmt_loader
+
+PRODUCT_PACKAGES += \
+    libGLES_mali \
+    libgpud \
+    libmtk_mali_user \
+    vendor.mediatek.hardware.graphics-V1-ndk
