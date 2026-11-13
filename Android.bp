@@ -39090,6 +39090,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mtkfusionrild",
             ],
             shared_libs: [
+                "libutils",
                 "libmtkrillog",
                 "libmtkproperty",
                 "libmtkcutils",
