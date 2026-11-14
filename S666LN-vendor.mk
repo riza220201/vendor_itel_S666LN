@@ -411,7 +411,6 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
-    vendor/itel/S666LN/proprietary/vendor/etc/init/vndservicemanager-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager-stock.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/wlan_assistant-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant-stock.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -1825,7 +1824,6 @@ PRODUCT_PACKAGES += \
     tran_tinymix \
     tranlog \
     tranlogconfig \
-    vndservicemanager \
     volte_clientapi_ua \
     volte_imcb \
     volte_imsm_93 \

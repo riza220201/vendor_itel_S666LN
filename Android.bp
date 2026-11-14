@@ -32207,6 +32207,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libcam.iopipe.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "libdmabufheap",
                 "libaedv",
                 "liblog",
@@ -32397,6 +32398,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libcam.utils.sensorprovider.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "liblog",
                 "libmtkcam_ulog",
                 "libutils",
@@ -33916,6 +33918,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.capture.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "libcamalgo.fdft",
                 "lib3a.af.core",
                 "lib3a.flash",
@@ -33978,6 +33981,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.depthmap.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "libaedv",
                 "liblog",
                 "libnativewindow",
@@ -34037,6 +34041,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.streaming.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "libWaterMarkProc",
                 "liblog",
                 "libutils",
@@ -34208,6 +34213,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.customer.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -34420,6 +34426,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_device3_app.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "libmtkcam_device3_utils",
                 "liblog",
                 "libutils",
@@ -34462,6 +34469,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_device3_hal.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "libmtkcam_device3_utils",
                 "liblog",
                 "libutils",
@@ -34599,6 +34607,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_device3_utils.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -34921,6 +34930,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_hwnode.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "libWaterMarkProc",
                 "liblog",
                 "libutils",
@@ -35004,6 +35014,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_hwutils.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "libfeature.stereo.provider",
                 "liblog",
                 "libmtkcam_ulog",
@@ -35575,6 +35586,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_isp.so",
             ],
             shared_libs: [
+                "libshim_thread",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -40189,36 +40201,6 @@ cc_prebuilt_binary {
                 "libhidltransport",
                 "vendor.transsion.hardware.tranlogconfig@1.0",
                 "libhwbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vndservicemanager",
-    owner: "itel",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vndservicemanager",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libselinux",
                 "libc++",
                 "libc",
                 "libm",
