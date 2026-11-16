@@ -350,7 +350,7 @@ on post-fs-data
     chown system system /proc/sys/vm/min_free_kbytes
     chmod 0660 /proc/sys/vm/min_free_kbytes
     chown system system /sys/kernel/mm/transparent_hugepage/enabled
-    chmod 0660 /sys/kernel/mm/transparent_hugepage/enabled
+    chmod 0664 /sys/kernel/mm/transparent_hugepage/enabled
     chown system system /sys/kernel/mm/transparent_hugepage/defrag
     chmod 0660 /sys/kernel/mm/transparent_hugepage/defrag
     chown system system /sys/kernel/mm/transparent_hugepage/khugepaged/defrag

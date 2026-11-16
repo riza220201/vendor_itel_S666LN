@@ -36682,6 +36682,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/nfc_nci_nxp.so",
             ],
             shared_libs: [
+                "libshim_nfcjoin",
                 "libbase",
                 "libcutils",
                 "libhardware",
